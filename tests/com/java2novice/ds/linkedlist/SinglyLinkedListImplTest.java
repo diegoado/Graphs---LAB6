@@ -22,11 +22,11 @@ public class SinglyLinkedListImplTest {
     public void setUp() {
         // Create a stream to hold the output
         console = new ByteArrayOutputStream();
-        PrintStream newPrintStream = new PrintStream(console);
+        PrintStream myPrintStream = new PrintStream(console);
         // IMPORTANT: Save the old System.out!
         defaultOut = System.out;
         // Tell Java to use your special stream
-        System.setOut(newPrintStream);
+        System.setOut(myPrintStream);
         linkedList = new SinglyLinkedListImpl<>();
     }
 
